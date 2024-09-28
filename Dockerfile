@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM amazonlinux:latest
 RUN yum -y update
 RUN yum install -y httpd curl
 RUN yum install -y zip
@@ -8,6 +8,7 @@ WORKDIR /var/www/html
 RUN unzip avalon.zip
 RUN cp -rvf avalon/* .
 RUN rm -rf avalon avalon.zip
-ENTRYPOINT ["/usr/sbin/apache2ctl"]
+ENTRYPOINT ["/usr/sbin/httpd"]
 CMD ["-D", "FOREGROUND"]
 EXPOSE 80
+
