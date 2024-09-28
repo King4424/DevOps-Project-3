@@ -1,9 +1,9 @@
 FROM amazonlinux:latest
 RUN yum -y update
-RUN yum install -y httpd curl
-RUN yum install -y zip
-RUN yum install -y unzip
-ADD /home/ec2-user/avalon.zip /var/www/html/
+RUN yum install httpd -y
+RUN yum install zip  -y
+RUN yum install unzip -y
+ADD ./avalon.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip avalon.zip
 RUN cp -rvf avalon/* .
