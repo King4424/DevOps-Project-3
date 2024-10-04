@@ -1,8 +1,8 @@
-FROM amazonlinux:latest
-RUN yum -y update
-RUN yum install httpd -y
-RUN yum install zip  -y
-RUN yum install unzip -y
+FROM ubuntu:latest
+RUN apt -y update
+RUN apt install -y apache2 curl
+RUN apt install zip  -y
+RUN apt install unzip -y
 ENTRYPOINT ["/usr/sbin/httpd"]
 CMD ["-D", "FOREGROUND"]
 EXPOSE 80
