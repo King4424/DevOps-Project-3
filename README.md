@@ -1,0 +1,1 @@
+![svg xmlns=httpwww w3 org2000svg x=0px y=0px width=100 height=100 viewBox=0 0 48 48 path fill=#424242 d=M44,24c0,11 045-8 955,20-20,20S4,35 045,4,24S12 955,4,24,4S44,12 955,44,24zpathpath fill=#fff (2)](https://github.com/user-attachments/assets/ea03c1b6-dc4d-45b3-91e6-ee9d5cb05245)
